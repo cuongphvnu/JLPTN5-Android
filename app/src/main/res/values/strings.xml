@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">JLPTN5</string>
+
+    <string name="home_search_kanji_hint">Search by translation</string>
+
+    <string name="title_activity_walkthrough"></string>
+    <string name="title_activity_kanji_detail"></string>
+
+    <string name="navigation_title_home">Kanji</string>
+    <string name="navigation_title_quiz">Quiz</string>
+    <string name="navigation_title_about">About</string>
+
+    <string name="more_introduction">JLPT N5 is a project created by Aymen Rebouh.\n\nI\'d love to know how I can make the app even better, and make your experience more enjoyable.</string>
+    <string name="more_send_email">Send me an email</string>
+    <string name="more_recommend">Show it to the world</string>
+    <string name="more_about">About</string>
+    <string name="more_credits">Credits</string>
+    <string name="more_credits_kanji_alive">Kanji Alive for all the kanji</string>
+    <string name="more_credits_flaticon">Flaticon for the free icons</string>
+    <string name="more_kanji_alive_website">http://kanjialive.com</string>
+    <string name="more_flaticon_website">http://flaticon.com</string>
+    <string name="more_mail_to">mailto:aymenmse@gmail.com</string>
+    <string name="more_icon_arrow_content_description">An icon representing the arrow for a redirecting feature</string>
+
+    <string name="quizz_play_with_numbers">Play with numbers</string>
+    <string name="quizz_fill_blanks">Fill in the blanks</string>
+    <string name="quizz_more_variety">More Variety Of Quizzes</string>
+    <string name="quizz_start">Let\'s start</string>
+    <string name="quizz_words_translation">Words Translations</string>
+    <string name="quizz_kanji_translation">Kanji Translations</string>
+    <string name="quizz_level_difficult">Difficult</string>
+    <string name="quizz_level_medium">Medium</string>
+    <string name="quizz_level_easy">Easy</string>
+
+    <string name="detail_onyomi">onyomi : </string>
+    <string name="detail_kunyomi">kunyomi : </string>
+    <string name="detail_prononciation">Pronunciation</string>
+    <string name="detail_words">Words</string>
+    <string name="detail_translation">Translation</string>
+    <string name="detail_number_of_strokes">Number of strokes</string>
+
+    <string name="walkthrough_get_started">Get started</string>
+    <string name="walkthrough_kanji_step_1_title">Learning kanji made easy</string>
+    <string name="walkthrough_kanji_step_1_description">\nThrough quizzes and user friendly interface,\nwe made the learning process more enjoyable for you</string>
+    <string name="walkthrough_kanji_step_2_title">Details, sounds and videos</string>
+    <string name="walkthrough_kanji_step_2_description">\nEasily access to all kanji meaning and\nlisten to the words pronunciation</string>
+    <string name="walkthrough_kanji_step_3_title">Practice through funny quizzes</string>
+    <string name="walkthrough_kanji_step_3_description">\nRemember what you have learning with quizzes.\nYou can even create yours.</string>
+
+    <string name="quizz_icon_answer_content_description">An icon representing the answer choice</string>
+    <string name="quizz_icon_type_word_content_description">An icon representing the type of quizz. It\'s a word quizz.</string>
+    <string name="quizz_icon_type_fill_blanks_content_description">An icon representing the type of quizz. It\'s a quizz where you must fill in the blank.</string>
+    <string name="quizz_icon_type_numbers_content_description">An icon representing the type of quizz. It\'s a number quizz.</string>
+
+</resources>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <!-- Section - Find the kanji translations -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/quizz_item_icon_left_margin"
+                android:paddingRight="@dimen/quizz_item_icon_right_margin"
+                android:text="@string/quizz_kanji_translation"
+                android:textAllCaps="true"
+                android:textSize="@dimen/quizz_item_title_size"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Easy -->
+                    <LinearLayout
+                        android:id="@+id/quizz_easy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/quizz_item_height"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/quizz_item_icon_size"
+                            android:layout_height="@dimen/quizz_item_icon_size"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                            android:layout_marginRight="@dimen/quizz_item_icon_right_margin"
+                            android:background="@drawable/corner_radius_green" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/quizz_level_easy"
+
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/quizz_item_title_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/separator" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Medium -->
+                    <LinearLayout
+                        android:id="@+id/quizz_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/quizz_item_height"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="@dimen/quizz_item_icon_size"
+                            android:layout_height="@dimen/quizz_item_icon_size"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                            android:layout_marginRight="@dimen/quizz_item_icon_right_margin"
+                            android:background="@drawable/corner_radius_orange" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="@string/quizz_level_medium"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/quizz_item_title_size" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/separator" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Difficult -->
+                    <LinearLayout
+                        android:id="@+id/quizz_difficult"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/quizz_item_height"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:orientation="horizontal">
+
+
+                        <View
+                            android:layout_width="@dimen/quizz_item_icon_size"
+                            android:layout_height="@dimen/quizz_item_icon_size"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                            android:layout_marginRight="@dimen/quizz_item_icon_right_margin"
+                            android:background="@drawable/corner_radius_red" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/quizz_level_difficult"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/quizz_item_title_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Section - Find the words translations -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/quizz_words_translation"
+                android:textAllCaps="true"
+                android:textSize="@dimen/quizz_item_title_size"/>
+
+            <!-- Let's start -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorWhite"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/quizz_words"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/quizz_item_height"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/quizz_item_icon_size"
+                        android:layout_height="@dimen/quizz_item_icon_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                        android:layout_marginRight="@dimen/quizz_item_icon_right_margin"
+                        app:srcCompat="@drawable/ic_word"
+                        android:contentDescription="@string/quizz_icon_type_word_content_description"
+                        android:tint="@color/darkPurple" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/quizz_start"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/quizz_item_title_size" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Section - More variety of quizzes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:textAllCaps="true"
+                android:text="@string/quizz_more_variety"
+                android:textSize="@dimen/quizz_item_title_size"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorWhite"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Fill in the blanks -->
+                        <LinearLayout
+                            android:id="@+id/quizz_fill_blanks"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/quizz_item_height"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/quizz_item_icon_size"
+                                android:layout_height="@dimen/quizz_item_icon_size"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                                android:layout_marginRight="@dimen/quizz_item_icon_right_margin"
+                                android:contentDescription="@string/quizz_icon_type_numbers_content_description"
+                                app:srcCompat="@drawable/ic_pencil"
+                                android:tint="@color/rose" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/quizz_fill_blanks"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/quizz_item_title_size" />
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/separator" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Play with numbers -->
+                        <LinearLayout
+                            android:id="@+id/quizz_numbers"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/quizz_item_height"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/quizz_item_icon_size"
+                                android:layout_height="@dimen/quizz_item_icon_size"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/quizz_item_icon_left_margin"
+                                android:layout_marginRight="@dimen/quizz_item_icon_right_margin"
+                                android:contentDescription="@string/quizz_icon_type_numbers_content_description"
+                                app:srcCompat="@drawable/ic_numbers"
+                                android:tint="@color/skyBlue" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/quizz_play_with_numbers"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/quizz_item_title_size" />
+
+                        </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+</ScrollView>

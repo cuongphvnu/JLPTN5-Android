@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="quizz_item_height">60dp</dimen>
+    <dimen name="quizz_item_icon_size">25dp</dimen>
+    <dimen name="quizz_item_icon_left_margin">24dp</dimen>
+    <dimen name="quizz_item_icon_right_margin">30dp</dimen>
+    <dimen name="quizz_item_icon_radius">4dp</dimen>
+    <dimen name="quizz_item_title_size">20sp</dimen>
+
+    <dimen name="more_item_title_size">20sp</dimen>
+    <dimen name="more_item_height">60dp</dimen>
+
+</resources>
